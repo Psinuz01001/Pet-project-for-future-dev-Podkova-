@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Подкова</title>
+    <!-- Header -->
+    <header class="site-header">
+        <!-- Video Background -->
+        <video class="header-video" autoplay loop muted>
+            <source src="vid/1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Navigation -->
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#price-list" onclick="scrollToSection(event, 'price-list')">Prices</a></li>
+                <li><a href="#about-section" class="smooth-scroll">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
+
+            </ul>
+        </nav>
+
+    </header>
+</head>
+
+<body>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="container">
+            <!-- Image -->
+            <div class="main-image">
+                <img src="img/6.png" alt="Main Image">
+            </div>
+
+            <!-- Text Content -->
+            <div class="main-content">
+                <h1>Подкова</h1>
+                <p>Откройте для себя нашу коллецию цветов и не только.</p>
+                <a href="#products-section" class="shop-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+
+    <section id="products-section" class="products-section">
+        <div class="container">
+            <!-- Section Title -->
+            <h2>Our Collection</h2>
+
+            <!-- Products Grid 1 -->
+            <div class="products-grid">
+                <!-- Single Product Card -->
+                <div class="product-card">
+                    <img src="img/2.png" alt="Product 1">
+                    <h3>Flowers</h3>
+                    <a href="#flowers-section" class="product-button">View Details</a>
+
+                </div>
+
+                <!-- Repeat similar structure for other products... -->
+
+                <div class="product-card">
+                    <img src="img/4.png" alt="Product 2">
+                    <h3>Gifts</h3>
+                    <a href="#gifts-section" class="product-button">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/5.png" alt="Product 3">
+                    <h3>Decor</h3>
+                    <a href="#decor-section" class="product-button">View Details</a>
+                </div>
+
+                <!-- ... and so on for other products -->
+            </div>
+        </div>
+    </section>
+    <!-- Separator Image -->
+    <div class="separator-image">
+        <img src="img/separator/1.png" alt="Separator" class="separator-image">
+    </div>
+
+
+
+
+
+    <!-- Flowers Section -->
+    <section id="flowers-section" class="shadow-separator">
+        <div class="flowers-container">
+            <div class="flowers-text">
+                <h2>Flowers</h2>
+                <p>
+                    Explore our diverse range of flowers, perfect for every occasion.
+                </p>
+            </div>
+            <div class="flowers-products">
+                <!-- Card 1 -->
+                <div class="flowers-product-card">
+                    <img src="img/flowers/1.png" alt="Flower Product Image">
+                    <h3>Flower Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="flowers-product-button" data-modal-target="flowersModal1">Shop Now</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="flowers-product-card">
+                    <img src="img/flowers/2.png" alt="Flower Product Image">
+                    <h3>Flower Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="flowers-product-button" data-modal-target="flowersModal2">Shop Now</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="flowers-product-card">
+                    <img src="img/flowers/3.png" alt="Flower Product Image">
+                    <h3>Flower Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="flowers-product-button" data-modal-target="flowersModal3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gifts Section -->
+    <section id="gifts-section" class="shadow-separator">
+        <div class="gifts-container">
+            <div class="gifts-text">
+                <h2>Gifts</h2>
+                <p>
+                    Explore our diverse range of gifts, perfect for every occasion.
+                </p>
+            </div>
+            <div class="gifts-products">
+                <!-- Card 1 -->
+                <div class="gifts-product-card">
+                    <img src="img/gifts/1.png" alt="Gift Product Image">
+                    <h3>Gift Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="gifts-product-button" data-modal-target="giftsModal1">Shop Now</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="gifts-product-card">
+                    <img src="img/gifts/2.png" alt="Gift Product Image">
+                    <h3>Gift Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="gifts-product-button" data-modal-target="giftsModal2">Shop Now</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="gifts-product-card">
+                    <img src="img/gifts/3.png" alt="Gift Product Image">
+                    <h3>Gift Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="gifts-product-button" data-modal-target="giftsModal3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Decor Section -->
+    <section id="decor-section" class="shadow-separator">
+        <div class="decor-container">
+            <div class="decor-text">
+                <h2>Decor</h2>
+                <p>
+                    Dive into our exquisite range of decor items, perfect to beautify your spaces.
+                </p>
+            </div>
+            <div class="decor-products">
+                <!-- Card 1 -->
+                <div class="decor-product-card">
+                    <img src="img/decor/1.png" alt="Decor Product Image">
+                    <h3>Decor Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="decor-product-button" data-modal-target="decorModal1">Shop Now</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="decor-product-card">
+                    <img src="img/decor/2.png" alt="Decor Product Image">
+                    <h3>Decor Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="decor-product-button" data-modal-target="decorModal2">Shop Now</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="decor-product-card">
+                    <img src="img/decor/3.png" alt="Decor Product Image">
+                    <h3>Decor Product Name</h3>
+                    <p>Price: $XX.XX</p>
+                    <a href="#" class="decor-product-button" data-modal-target="decorModal3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Модальное окно для продукта Flowers 1 -->
+    <div class="flowers-modal" id="flowersModal1">
+        <div class="flowers-modal-content">
+            <span class="close-modal close-btn">&times;</span>
+            <h2>Flower Products</h2>
+            <div class="modal-products-grid">
+                <!-- ... (содержимое для модального окна 1) ... -->
+                <div class="modal-product-item">
+                    <img src="img/modal-flower/2.png" alt="Product Name 3">
+                    <p>Product Name 3</p>
+                </div>
+
+                <div class="modal-product-item">
+                    <img src="img/modal-flower/3.png" alt="Product Name 4">
+                    <p>Product Name 4</p>
+                </div>
+
+                <div class="modal-product-item">
+                    <img src="img/modal-flower/4.png" alt="Product Name 5">
+                    <p>Product Name 5</p>
+                </div>
+
+                <div class="modal-product-item">
+                    <img src="img/modal-flower/6.png" alt="Product Name 6">
+                    <p>Product Name 6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для продукта Flowers 2 -->
+    <div class="flowers-modal" id="flowersModal2">
+        <div class="flowers-modal-content">
+            <span class="close-modal close-btn">&times;</span>
+            <h2>Second Flower Product</h2>
+            <div class="modal-products-grid">
+                <!-- ... (содержимое для модального окна 2) ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для продукта Flowers 3 -->
+    <div class="flowers-modal" id="flowersModal3">
+        <div class="flowers-modal-content">
+            <span class="close-modal close-btn">&times;</span>
+            <h2>Third Flower Product</h2>
+            <div class="modal-products-grid">
+                <!-- ... (содержимое для модального окна 3) ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для продукта Decor 1 -->
+    <div class="decor-modal" id="decorModal1">
+        <div class="decor-modal-content">
+            <span class="close-decor-modal">&times;</span>
+            <h2>Decor Product 1</h2>
+            <div class="decor-modal-products-grid">
+                <!-- ... (содержимое для модального окна 1) ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для продукта Decor 2 -->
+    <div class="decor-modal" id="decorModal2">
+        <div class="decor-modal-content">
+            <span class="close-decor-modal">&times;</span>
+            <h2>Decor Product 2</h2>
+            <div class="decor-modal-products-grid">
+                <!-- ... (содержимое для модального окна 2) ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для продукта Decor 3 -->
+    <div class="decor-modal" id="decorModal3">
+        <div class="decor-modal-content">
+            <span class="close-decor-modal">&times;</span>
+            <h2>Decor Product 3</h2>
+            <div class="decor-modal-products-grid">
+                <!-- ... (содержимое для модального окна 3) ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Gift product 1 -->
+    <div class="gifts-modal" id="giftsModal1">
+        <div class="gifts-modal-content">
+            <span class="close-modal close-btn">&times;</span>
+            <h2>Gift Products</h2>
+            <div class="modal-products-grid">
+                <!-- ... (content for modal 1) ... -->
+                <div class="modal-product-item">
+                    <img src="img/modal-gift/1.png" alt="Gift Product Name 1">
+                    <p>Gift Product Name 1</p>
+                </div>
+                <div class="modal-product-item">
+                    <img src="img/modal-gift/2.png" alt="Gift Product Name 2">
+                    <p>Gift Product Name 2</p>
+                </div>
+                <div class="modal-product-item">
+                    <img src="img/modal-gift/3.png" alt="Gift Product Name 3">
+                    <p>Gift Product Name 3</p>
+                </div>
+                <!-- ... and so on for other products ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Gift product 2 -->
+    <div class="gifts-modal" id="giftsModal2">
+        <div class="gifts-modal-content">
+            <span class="close-modal close-btn">&times;</span>
+            <h2>Second Gift Product</h2>
+            <div class="modal-products-grid">
+                <!-- ... (content for modal 2) ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Gift product 3 -->
+    <div class="gifts-modal" id="giftsModal3">
+        <div class="gifts-modal-content">
+            <span class="close-modal close-btn">&times;</span>
+            <h2>Third Gift Product</h2>
+            <div class="modal-products-grid">
+                <!-- ... (content for modal 3) ... -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- About Section -->
+    <section id="about-section" class="shadow-separator">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About</h2>
+                <p>Learn more about our company, our vision, and our commitment to excellence.</p>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/shots/1.png"></div>
+                    <div class="swiper-slide"><img src="img/shots/2.png"></div>
+                    <!-- ... добавьте другие слайды по аналогии ... -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/smooth.js"></script>
+    <script src="js/allModalsections.js"></script>
+    <script src="js/product-section.js"></script>
+    <script src="js/viewdetail.js"></script>
+    <script src="js/accordion_menu.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+<!-- Price List Page -->
+<section id="price-list" class="price-list-section">
+    <div class="container">
+        <h2>Price List</h2>
+
+        <!-- Category 1: Flowers -->
+        <div class="service-category">
+            <div class="service-title">
+                <h3>Flowers</h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="service-items">
+                <p class="service-item"><span class="service-name">Bouquet of the Day</span> - <span
+                        class="service-price">$xx</span></p>
+                <p class="service-item"><span class="service-name">Individual Bouquet</span> - <span
+                        class="service-price">$xx</span></p>
+                <p class="service-item"><span class="service-name">Wedding Compositions</span> - <span
+                        class="service-price">$xx</span></p>
+                <!-- ... other services ... -->
+            </div>
+        </div>
+
+        <!-- Category 2: Gifts and Decor -->
+        <div class="service-category">
+            <div class="service-title">
+                <h3>Gifts and Decor</h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="service-items">
+                <p class="service-item"><span class="service-name">Flower Vases</span> - <span
+                        class="service-price">$xx</span></p>
+                <p class="service-item"><span class="service-name">Aroma Candles</span> - <span
+                        class="service-price">$xx</span></p>
+                <p class="service-item"><span class="service-name">Decorative Pillows</span> - <span
+                        class="service-price">$xx</span></p>
+                <!-- ... other services ... -->
+            </div>
+        </div>
+
+        <!-- Category 3: Handmade Bags -->
+        <div class="service-category">
+            <div class="service-title">
+                <h3>Handmade Bags</h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="service-items">
+                <p class="service-item"><span class="service-name">Leather Bags</span> - <span
+                        class="service-price">$xx</span></p>
+                <p class="service-item"><span class="service-name">Textile Bags</span> - <span
+                        class="service-price">$xx</span></p>
+                <p class="service-item"><span class="service-name">Embroidered Bags</span> - <span
+                        class="service-price">$xx</span></p>
+                <!-- ... other services ... -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="site-footer" id="About">
+    <div class="container footer-container">
+        <!-- Shop Info -->
+        <div class="footer-info" id="social-links">
+            <h3>Contacts</h3>
+            <p>Address: Sosnovy Bor</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: Podkova900@gmail.com</p>
+        </div>
+
+        <!-- Social Media Links -->
+
+        <div class="social-links" id="Contact">
+            <a href="https://web.telegram.org/a/" target="_blank"><img src="img/7.png" alt="telegram"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/8.png" alt="Instagram"></a>
+            <a href="https://vk.com/" target="_blank"><img src="img/9.png" alt="VK"></a>
+        </div>
+    </div>
+
+
+    <!-- ... and so on for other social media icons -->
+</footer>
+
+</html>

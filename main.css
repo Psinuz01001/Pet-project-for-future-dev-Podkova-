@@ -1,0 +1,1073 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9FBEF;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Styles */
+
+
+/*Navigation*/
+
+.main-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.main-navigation li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.main-navigation li a:hover {
+    color: #888;
+}
+
+/* Main Section Styles */
+.main-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #FFFFFF;
+
+}
+
+.main-image {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.main-content {
+    flex: 1;
+}
+
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F9FBEF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+    background-color: #EFEDEA;
+}
+
+/* Products Section Styles */
+
+.products-section {
+    padding: 50px 0;
+    background-color: #F9FBEF;
+}
+
+.products-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #FEF6F4;
+    flex: 1;
+    max-width: calc(33.33% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.product-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #EFEDEA;
+}
+
+/* Footer Styles */
+.site-footer {
+    padding: 40px 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.footer-info h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* позволяет элементам переноситься на следующую строку */
+}
+
+.footer-info {
+
+    flex: 1;
+    /* позволяет элементам занимать одинаковое пространство */
+    padding: 10px;
+    /* добавить немного отступа между колонками */
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a img {
+    width: 80px;
+    height: 80px;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover img {
+    opacity: 0.7;
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying animation to main sections */
+.site-header,
+.main-section,
+.products-section,
+.site-footer {
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Price List Accordion Styles */
+
+#price-list .container {
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f9f7f7, #ffffff);
+    /* добавлен градиент */
+    overflow: hidden;
+}
+
+
+
+.service-category {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-category:last-child {
+    border-bottom: none;
+}
+
+.category:not(:last-child) {
+    position: relative;
+}
+
+.category:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ddd, transparent);
+}
+
+
+.service-category:hover {
+    background-color: #f9f9f9;
+}
+
+.service-title {
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-items {
+    display: none;
+    padding: 0 24px 16px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.service-name {
+    font-size: 16px;
+    color: #333;
+}
+
+.service-price {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/*Flowers section*/
+
+#flowers-section {
+    background-color: #F2E9E4;
+    /* Это пример цвета. Вы можете заменить его на любой другой. */
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+.flowers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.flowers-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flowers-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.flowers-text p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.flowers-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.flowers-product-card {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: #FEF6F4;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.flowers-product-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.flowers-product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.flowers-product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.flowers-product-card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.flowers-product-button {
+    background-color: #FFB6B9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.flowers-product-button:hover {
+    background-color: #FFA1A4;
+}
+
+
+
+
+
+/*Gifts section*/
+
+#gifts-section {
+
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.gifts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.gifts-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gifts-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.gifts-text p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.gifts-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 колонки равной ширины */
+    gap: 30px;
+    /* расстояние между карточками */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.gifts-product-card {
+    flex: 0 0 calc(33.333% - 20px);
+    /* Для 3 карточек в ряду с учетом отступов */
+    background-color: #FEF6F4;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Плавный переход для ховер-эффектов */
+    opacity: .9;
+}
+
+.gifts-product-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    /* Поднимаем карточку вверх при наведении */
+}
+
+
+.gifts-product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.gifts-product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gifts-product-card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.gifts-product-button {
+    background-color: #FFB6B9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.gifts-product-button:hover {
+    background-color: #FFA1A4;
+}
+
+/*Decor section*/
+
+#decor-section {
+
+    /* Меняем на другой путь или оставляем, если обои одинаковые */
+    background-size: cover;
+    background-position: center center;
+}
+
+.decor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.decor-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.decor-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.decor-text p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.decor-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.decor-product-card {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: #FEF6F4;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.decor-product-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.decor-product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.decor-product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.decor-product-card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.decor-product-button {
+    background-color: #FFB6B9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.decor-product-button:hover {
+    background-color: #FFA1A4;
+}
+
+
+/*Modal*/
+
+.about-modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-modal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Separator*/
+
+.separator {
+    border-bottom: 1px solid #ccc;
+    /* или другой цвет по вашему выбору */
+    margin: 20px 0;
+    /* отступы сверху и снизу для разделения */
+}
+
+.shadow-separator {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-separator {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, #ccc, transparent);
+    border-image-slice: 1;
+}
+
+.space-separator {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    /* или другой светлый цвет по вашему выбору */
+}
+
+/*Separator image*/
+
+.separator-container {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    /* Это может помочь обрезать изображение, если оно выходит за пределы контейнера */
+}
+
+.separator-image {
+    width: 100%;
+    /* Установите ширину изображения на 100% экрана */
+    display: block;
+    /* Уберите отступы по умолчанию у изображений */
+    margin: auto;
+    /* Центрируйте изображение по горизонтали */
+    max-height: 900px;
+    /* Максимальная высота изображения (по желанию, можно изменить) */
+    object-fit: cover;
+    /* Это обеспечит сохранение пропорций изображения */
+}
+
+
+
+/* Video header */
+
+.site-header {
+    position: relative;
+    overflow: hidden;
+    /* чтобы видео не выходило за пределы header */
+}
+
+.site-header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* Стили для модального окна */
+.flowers-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Чуть-чуть прозрачный фон */
+}
+
+.modal-header-image {
+    width: 100%;
+    /* Изображение будет растянуто на всю ширину модального окна */
+    max-height: 150px;
+    /* Ограничиваем высоту изображения */
+    object-fit: cover;
+    /* Подгоняем изображение так, чтобы оно заполнило свою область без искажений */
+    border-radius: 10px 10px 0 0;
+    /* Скругляем верхние уголки изображения */
+}
+
+.flowers-modal-content {
+    background-color: #FEF6F4;
+    padding: 20px;
+    width: 90%;
+    /* Увеличиваем ширину до 90% экрана */
+    max-width: 1200px;
+    /* Устанавливаем максимальную ширину */
+    height: 80%;
+    /* Устанавливаем высоту в 80% экрана */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: fixed;
+    /* Позиционируем модальное окно */
+    top: 50%;
+    /* Центрируем по вертикали */
+    left: 50%;
+    /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%);
+    /* Смещение для центрирования */
+    overflow-y: auto;
+    /* Добавляем прокрутку по вертикали, если содержимое не умещается */
+
+
+
+}
+
+.modal-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Расстояние между элементами сетки */
+    justify-content: center;
+    /* Центрирование элементов сетки */
+    padding: 20px 0;
+}
+
+.modal-product-item {
+    flex: 0 0 calc(33.333% - 20px);
+    /* Размер каждой ячейки (приближенно к 1/3 экрана минус зазор) */
+    border-radius: 8px;
+    overflow: hidden;
+    /* Для округления углов изображения */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Тень */
+    transition: transform 0.2s;
+    /* Эффект "hover" */
+}
+
+.modal-product-item:hover {
+    transform: scale(1.05);
+    /* При наведении ячейка немного увеличится */
+}
+
+.modal-product-item img {
+    width: 100%;
+    /* Растягиваем изображение на всю ширину ячейки */
+    display: block;
+}
+
+.modal-product-item p {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Чуть прозрачный фон для текста */
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-price {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ee82ee;
+}
+
+/* Decor Modal Styles */
+.decor-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Чуть-чуть прозрачный фон */
+}
+
+.decor-modal-content {
+    background-color: #FEF6F4;
+    padding: 20px;
+    width: 90%;
+    /* Увеличиваем ширину до 90% экрана */
+    max-width: 1200px;
+    /* Устанавливаем максимальную ширину */
+    height: 80%;
+    /* Устанавливаем высоту в 80% экрана */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: fixed;
+    /* Позиционируем модальное окно */
+    top: 50%;
+    /* Центрируем по вертикали */
+    left: 50%;
+    /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%);
+    /* Смещение для центрирования */
+    overflow-y: auto;
+    /* Добавляем прокрутку по вертикали, если содержимое не умещается */
+}
+
+.close-decor-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.decor-modal-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Расстояние между элементами сетки */
+    justify-content: center;
+    /* Центрирование элементов сетки */
+    padding: 20px 0;
+}
+
+.decor-modal-product-item {
+    flex: 0 0 calc(33.333% - 20px);
+    /* Размер каждой ячейки (приближенно к 1/3 экрана минус зазор) */
+    border-radius: 8px;
+    overflow: hidden;
+    /* Для округления углов изображения */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Тень */
+    transition: transform 0.2s;
+    /* Эффект "hover" */
+}
+
+.decor-modal-product-item:hover {
+    transform: scale(1.05);
+    /* При наведении ячейка немного увеличится */
+}
+
+.decor-modal-product-item img {
+    width: 100%;
+    /* Растягиваем изображение на всю ширину ячейки */
+    display: block;
+}
+
+.decor-modal-product-item p {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Чуть прозрачный фон для текста */
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.decor-product-button {
+    cursor: pointer;
+}
+
+.flowers-modal,
+.decor-modal {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.flowers-modal.show,
+.decor-modal.show,
+.show {
+    opacity: 1;
+}
+
+/* Gifts Modal Styles */
+.gifts-modal {
+    transition: opacity 0.2s;
+    opacity: 0;
+    /* Initial state: Hidden */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent background */
+}
+
+.gifts-modal-content {
+    background-color: #FEF6F4;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+.close-gifts-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.gifts-modal-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.gifts-modal-product-item {
+    flex: 0 0 calc(33.333% - 20px);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gifts-modal-product-item:hover {
+    transform: scale(1.05);
+}
+
+.gifts-modal-product-item img {
+    width: 100%;
+    display: block;
+}
+
+.gifts-modal-product-item p {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gifts-product-button {
+    cursor: pointer;
+}
+
+.gifts-modal.show {
+    opacity: 1;
+    /* Shown state: Visible */
+}
+
+/* About Section Styles */
+
+.about-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-text {
+    margin-top: 20px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/*Swiper*/
+
+.swiper {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.swiper-slide img {
+    width: 55%;
+    height: auto;
+}
